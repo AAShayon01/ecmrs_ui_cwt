@@ -4,7 +4,7 @@ class SChipTheme{
 
   ///Light
 
-static ChipThemeData lightChipThemeData=ChipThemeData(
+static ChipThemeData lightChipTheme=ChipThemeData(
   disabledColor: Colors.grey.withOpacity(.5),
   labelStyle: const TextStyle(color: Colors.black),
   selectedColor: Colors.blue,
@@ -15,7 +15,7 @@ static ChipThemeData lightChipThemeData=ChipThemeData(
 
 ///dark
 
-  static ChipThemeData darkChipThemeData=ChipThemeData(
+  static ChipThemeData darkChipTheme=ChipThemeData(
     disabledColor: Colors.grey,
     labelStyle: const TextStyle(color: Colors.white),
     selectedColor: Colors.blue,
