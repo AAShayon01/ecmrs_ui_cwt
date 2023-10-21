@@ -16,7 +16,11 @@ static final lightOutlinedButtonTheme=OutlinedButtonThemeData(
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14))
   ),
 );
-static final DarkOutlineButtonTheme=OutlinedButtonThemeData(
+
+///dark
+
+
+  static final DarkOutlineButtonTheme=OutlinedButtonThemeData(
   style: OutlinedButton.styleFrom(
     elevation: 0,
     side:const  BorderSide(color: Colors.blueAccent),
