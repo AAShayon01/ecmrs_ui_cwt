@@ -14,10 +14,10 @@ class STextTheme{
 
     bodyLarge: TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w500,color: Colors.black),
     bodyMedium: TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.normal,color: Colors.black),
-    bodySmall: TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w500,color: Colors.black.withOpacity(.05)),
+    bodySmall: TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w500,color: Colors.black.withOpacity(.5)),
     
     labelLarge: TextStyle().copyWith(fontSize: 12.0, fontWeight: FontWeight.normal,color: Colors.black),
-    labelMedium: TextStyle().copyWith(fontSize: 12.0, fontWeight: FontWeight.normal,color: Colors.black.withOpacity(.05)),
+    labelMedium: TextStyle().copyWith(fontSize: 12.0, fontWeight: FontWeight.normal,color: Colors.black.withOpacity(.5)),
 
 
 
@@ -33,10 +33,10 @@ class STextTheme{
 
     bodyLarge: TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w500,color: Colors.white),
     bodyMedium: TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.normal,color: Colors.white),
-    bodySmall: TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w500,color: Colors.white.withOpacity(.05)),
+    bodySmall: TextStyle().copyWith(fontSize: 14.0, fontWeight: FontWeight.w500,color: Colors.white.withOpacity(.5)),
 
     labelLarge: TextStyle().copyWith(fontSize: 12.0, fontWeight: FontWeight.normal,color: Colors.white),
-    labelMedium: TextStyle().copyWith(fontSize: 12.0, fontWeight: FontWeight.normal,color: Colors.white.withOpacity(.05)),
+    labelMedium: TextStyle().copyWith(fontSize: 12.0, fontWeight: FontWeight.normal,color: Colors.white.withOpacity(.5)),
   );
 
 }
