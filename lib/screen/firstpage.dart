@@ -9,6 +9,12 @@ class Firstpage extends StatefulWidget {
 class _FirstpageState extends State<Firstpage> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(child: Scaffold());
+    return SafeArea(child: Scaffold(
+
+      backgroundColor: Colors.deepPurpleAccent,
+      appBar: AppBar(
+        actions: [],
+      ),
+    ));
   }
 }

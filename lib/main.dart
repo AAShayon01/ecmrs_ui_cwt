@@ -14,7 +14,6 @@ class _MyappState extends State<Myapp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      color: Colors.deepPurpleAccent,
       home: Firstpage(),
     );
   }
