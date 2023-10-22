@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 class STextFormFieldTheme {
   STextFormFieldTheme._();
   static InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(
+    ///         light Mode         ///
+
       errorMaxLines: 3,
       prefixIconColor: Colors.grey,
       suffixIconColor: Colors.grey,
@@ -28,6 +30,9 @@ class STextFormFieldTheme {
 
   );
   static InputDecorationTheme darkInputDecorationTheme = InputDecorationTheme(
+      ///dark mode ///
+
+
       errorMaxLines: 3,
       prefixIconColor: Colors.grey,
       suffixIconColor: Colors.grey,
