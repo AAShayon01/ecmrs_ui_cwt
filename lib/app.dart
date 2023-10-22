@@ -1,4 +1,5 @@
-import 'package:ecmrs_ui_fbase/screen/utils/theme/theme.dart';
+
+import 'package:ecmrs_ui_fbase/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 ///--Using This class to Setup Themes ,initial Bindings ,Animation --///
