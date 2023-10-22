@@ -11,9 +11,5 @@ void main(){
   ///Native splash
   ///Firebase
   ///Authentication
-
-
-
-
   runApp(const App());
 }
