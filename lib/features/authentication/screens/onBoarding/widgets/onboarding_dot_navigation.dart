@@ -1,3 +1,4 @@
+import 'package:ecmrs_ui_fbase/features/authentication/controllers.onboarding/onboardig_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -13,11 +14,13 @@ class onBoardingDotNavigation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller=OnBoardingController.instance;
     final dark=SHelperFunctions.isDarkMode(context);
     return Positioned(
       bottom: SDeviceUtlis.getBottomNavigationBarHeight() + 25,
       left: SSizes.defaultSpace,
-      child: SmoothPageIndicator(controller: PageController(), count: 3,
+      child: SmoothPageIndicator(controller:controller.pageController,
+        count: 3,onDotClicked: controller.dotNavigationClick,
         effect: ExpandingDotsEffect(activeDotColor:dark ? SColors.light : SColors.dark,dotHeight: 6 ),
       ),
 

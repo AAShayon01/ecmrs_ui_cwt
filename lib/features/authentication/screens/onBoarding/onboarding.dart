@@ -1,14 +1,11 @@
+import 'package:ecmrs_ui_fbase/features/authentication/controllers.onboarding/onboardig_controller.dart';
+import 'package:ecmrs_ui_fbase/features/authentication/screens/onBoarding/widgets/onboarding_next_Button.dart';
 import 'package:ecmrs_ui_fbase/features/authentication/screens/onBoarding/widgets/onboarding_page.dart';
 import 'package:ecmrs_ui_fbase/features/authentication/screens/onBoarding/widgets/onboarding_skip.dart';
-import 'package:ecmrs_ui_fbase/utils/constant/colors.dart';
 import 'package:ecmrs_ui_fbase/utils/constant/image_strings.dart';
-import 'package:ecmrs_ui_fbase/utils/constant/sizes.dart';
 import 'package:ecmrs_ui_fbase/utils/constant/text_strings.dart';
-import 'package:ecmrs_ui_fbase/utils/device/device_utility.dart';
-import 'package:ecmrs_ui_fbase/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-
+import 'package:get/get.dart';
 import 'widgets/onboarding_dot_navigation.dart';
 
 class OnBoardingScreen extends StatelessWidget {
@@ -16,11 +13,14 @@ class OnBoardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller=Get.put(OnBoardingController());
     return Scaffold(
       body: Stack(
         children: [
           ///Horizontal Scrollable
           PageView(
+            controller: controller.pageController,
+            onPageChanged: controller.updatePageIndicator,
             children: const [
               OnBoardingPage(
                   image: SImages.onBoardingImage1,
@@ -43,14 +43,13 @@ class OnBoardingScreen extends StatelessWidget {
           ///Dot Nav.. SmoothPageIndicator
          const onBoardingDotNavigation(),
           ///Circular button
-          Positioned(
-          right: SSizes.defaultSpace,
-          bottom: SDeviceUtlis.getBottomNavigationBarHeight(),
-          child: ElevatedButton(onPressed: (){}, child: Text("ok")))
+          onBoardingNextButton(),
         ],
       ),
     );
   }
 }
+
+
 
 

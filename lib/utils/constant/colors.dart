@@ -5,7 +5,7 @@ class SColors{
 ///Application Basic Color
 
 
-  static const Color primaryColor=Color(0xFF4B68FF);
+  static const Color primary=Color(0xFF4B68FF);
   static const Color secondary=Color(0xFFFFE248);
   static const Color accent=Color(0xFFb0c7ff);
 

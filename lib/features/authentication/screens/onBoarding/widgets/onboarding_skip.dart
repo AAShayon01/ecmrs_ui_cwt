@@ -1,3 +1,4 @@
+import 'package:ecmrs_ui_fbase/features/authentication/controllers.onboarding/onboardig_controller.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../utils/constant/sizes.dart';
@@ -12,7 +13,7 @@ class OnboardingSkip extends StatelessWidget {
     return Positioned(
       top: SDeviceUtlis.getAppBarHeight(),
       right: SSizes.defaultSpace,
-      child: TextButton(onPressed: () {}, child: const Text("skip"))
+      child: TextButton(onPressed: () =>OnBoardingController.instance.skipPage(), child: const Text("skip"))
     );
   }
 }
