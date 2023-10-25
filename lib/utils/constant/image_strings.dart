@@ -6,8 +6,8 @@ class SImages {
     static const String darkApplogo="assets/logos/s-Splash-dark.png";
     static const String lightApplogo="assets/logos/s-Splash-light.png";
   ///---Social logos
-    static const google="assets/logos/Google-logo.png";
-    static const facebook="assets/logos/facebook-logo.png";
+    static const google="assets/logos/google-icon.png";
+    static const facebook="assets/logos/facebook-icon.png";
 
    ///---OnBoarding Images
     static const String onBoardingImage1="assets/images/on_boarding_images/first-line.gif";
