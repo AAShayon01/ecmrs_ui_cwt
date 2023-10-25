@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:s_Store/features/authentication/screens/signup/signup.dart';
 import 'package:s_Store/utils/constant/colors.dart';
 import 'package:s_Store/utils/constant/sizes.dart';
 import 'package:s_Store/utils/constant/text_strings.dart';
@@ -80,7 +82,7 @@ class SLoginForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () => Get.to (()=>const SignupScreen()),
                     style: ElevatedButton.styleFrom(
                         primary:
                             dark ? Colors.orangeAccent : Colors.blueAccent),
