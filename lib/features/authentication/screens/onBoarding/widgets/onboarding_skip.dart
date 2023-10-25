@@ -1,8 +1,7 @@
-import 'package:ecmrs_ui_fbase/features/authentication/controllers.onboarding/onboardig_controller.dart';
 import 'package:flutter/material.dart';
-
 import '../../../../../utils/constant/sizes.dart';
 import '../../../../../utils/device/device_utility.dart';
+import '../../../controllers.onboarding/onboardig_controller.dart';
 class OnboardingSkip extends StatelessWidget {
   const OnboardingSkip({
     super.key,

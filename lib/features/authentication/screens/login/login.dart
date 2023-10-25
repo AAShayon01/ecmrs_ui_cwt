@@ -1,9 +1,8 @@
-import 'package:ecmrs_ui_fbase/common/styles/spacing_styles.dart';
-import 'package:ecmrs_ui_fbase/utils/constant/image_strings.dart';
-import 'package:ecmrs_ui_fbase/utils/constant/sizes.dart';
-import 'package:ecmrs_ui_fbase/utils/constant/text_strings.dart';
-import 'package:ecmrs_ui_fbase/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
+import 'package:s_Store/utils/constant/text_strings.dart';
+import '../../../../common/styles/spacing_styles.dart';
+import '../../../../utils/constant/image_strings.dart';
+import '../../../../utils/helpers/helper_function.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -24,7 +23,7 @@ class LoginScreen extends StatelessWidget {
                   height: 150,
                   image:AssetImage(dark ? SImages.lightApplogo : SImages.darkApplogo),
                 ),
-                Text(STexts.)
+                Text(STexts.loginTitle)
               ],
             )
           ],

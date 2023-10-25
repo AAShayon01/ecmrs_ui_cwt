@@ -1,12 +1,12 @@
-import 'package:ecmrs_ui_fbase/features/authentication/controllers.onboarding/onboardig_controller.dart';
-import 'package:ecmrs_ui_fbase/features/authentication/screens/onBoarding/widgets/onboarding_next_Button.dart';
-import 'package:ecmrs_ui_fbase/features/authentication/screens/onBoarding/widgets/onboarding_page.dart';
-import 'package:ecmrs_ui_fbase/features/authentication/screens/onBoarding/widgets/onboarding_skip.dart';
-import 'package:ecmrs_ui_fbase/utils/constant/image_strings.dart';
-import 'package:ecmrs_ui_fbase/utils/constant/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:s_Store/features/authentication/screens/onBoarding/widgets/onboarding_next_Button.dart';
+import 'package:s_Store/features/authentication/screens/onBoarding/widgets/onboarding_skip.dart';
+import '../../../../utils/constant/image_strings.dart';
+import '../../../../utils/constant/text_strings.dart';
+import '../../controllers.onboarding/onboardig_controller.dart';
 import 'widgets/onboarding_dot_navigation.dart';
+import 'widgets/onboarding_page.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
@@ -32,10 +32,6 @@ class OnBoardingScreen extends StatelessWidget {
                   subTitle: STexts.onBoardingSubTitle2),
               OnBoardingPage(
                   image: SImages.onBoardingImage3,
-                  title: STexts.onBoardingTitle3,
-                  subTitle: STexts.onBoardingSubTitle3,),
-              OnBoardingPage(
-                  image: SImages.onBoardingImage4,
                   title: STexts.onBoardingTitle3,
                   subTitle: STexts.onBoardingSubTitle3),
             ],

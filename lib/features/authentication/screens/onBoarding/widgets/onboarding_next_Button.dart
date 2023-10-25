@@ -1,11 +1,10 @@
-import 'package:ecmrs_ui_fbase/features/authentication/controllers.onboarding/onboardig_controller.dart';
-import 'package:ecmrs_ui_fbase/utils/constant/colors.dart';
-import 'package:ecmrs_ui_fbase/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-
+import '../../../../../utils/constant/colors.dart';
 import '../../../../../utils/constant/sizes.dart';
 import '../../../../../utils/device/device_utility.dart';
+import '../../../../../utils/helpers/helper_function.dart';
+import '../../../controllers.onboarding/onboardig_controller.dart';
 class onBoardingNextButton extends StatelessWidget {
   const onBoardingNextButton({
     super.key,

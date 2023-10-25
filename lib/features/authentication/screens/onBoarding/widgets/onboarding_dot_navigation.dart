@@ -1,11 +1,10 @@
-import 'package:ecmrs_ui_fbase/features/authentication/controllers.onboarding/onboardig_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-
 import '../../../../../utils/constant/colors.dart';
 import '../../../../../utils/constant/sizes.dart';
 import '../../../../../utils/device/device_utility.dart';
 import '../../../../../utils/helpers/helper_function.dart';
+import '../../../controllers.onboarding/onboardig_controller.dart';
 
 class onBoardingDotNavigation extends StatelessWidget {
   const onBoardingDotNavigation({

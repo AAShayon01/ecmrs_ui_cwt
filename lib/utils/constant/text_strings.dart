@@ -20,6 +20,8 @@ class STexts {
   static const String appName="S-Store";
   static const String tContinue="Continue";
 
+
+
   ///-Autherntication Form Text
  static const String firstName="First Name";
  static const String lastName="last Name";

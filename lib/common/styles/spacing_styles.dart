@@ -1,5 +1,6 @@
-import 'package:ecmrs_ui_fbase/utils/constant/sizes.dart';
 import 'package:flutter/cupertino.dart';
+
+import '../../utils/constant/sizes.dart';
 
 class SSpacingStyle{
   static const EdgeInsetsGeometry paddingwithAppBarHeight=EdgeInsets.only(
