@@ -1,4 +1,5 @@
-name: ecmrs_ui_fbase
+name: s_Store
+#ecmrs_ui_fbase
 description: A new Flutter project.
 publish_to: 'none'
 version: 1.0.0+1

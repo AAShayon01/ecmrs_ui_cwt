@@ -10,7 +10,8 @@ class SImages {
     static const facebook="assets/logos/facebook-logo.png";
 
    ///---OnBoarding Images
-    static const String onBoardingImage1="assets/images/on_boarding_images/shayon-line-searching.gif";
-    static const String onBoardingImage2="assets/images/on_boarding_images/shayon-line-shopping.gif";
-    static const String onBoardingImage3="assets/images/on_boarding_images/shayon-line-delivery.gif";
+    static const String onBoardingImage1="assets/images/on_boarding_images/first-line.gif";
+    static const String onBoardingImage2="assets/images/on_boarding_images/two.gif";
+    static const String onBoardingImage3="assets/images/on_boarding_images/three.gif";
+    static const String onBoardingImage4="assets/images/on_boarding_images/four.gif";
 }

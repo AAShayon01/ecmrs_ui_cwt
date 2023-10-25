@@ -17,7 +17,7 @@ Rx<int> currentPageIndex=0.obs;
   }
  ///update current index & jump to next page
  void nextPage(){
-    if(currentPageIndex.value == 2){
+    if(currentPageIndex.value == 3){
       // Get.to(Loginscreen());
     }else {
       int page =currentPageIndex.value +1;
@@ -26,7 +26,7 @@ Rx<int> currentPageIndex=0.obs;
  }
   ///update current index & jump to the next Page
  void skipPage(){
-    currentPageIndex.value=2;
-    pageController.jumpToPage(2);
+    currentPageIndex.value=3;
+    pageController.jumpToPage(3);
  }
 }
