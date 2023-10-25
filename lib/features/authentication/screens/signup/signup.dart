@@ -33,7 +33,7 @@ class SignupScreen extends StatelessWidget {
                       children: [
                         Expanded(
                           child: TextFormField(
-                            expands: false ,
+                            expands: false ,//
                             decoration: const InputDecoration(
                                 labelText: STexts.firstName,
                                 prefixIcon: Icon(Iconsax.user)),
