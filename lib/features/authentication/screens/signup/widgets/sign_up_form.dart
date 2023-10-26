@@ -1,20 +1,21 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:s_Store/features/authentication/screens/signup/widgets/terms_condition.dart';
 import 'package:s_Store/utils/constant/colors.dart';
 import 'package:s_Store/utils/constant/sizes.dart';
 import 'package:s_Store/utils/constant/text_strings.dart';
+import 'package:s_Store/utils/helpers/helper_function.dart';
 
-class SIgnupForm extends StatelessWidget {
-  const SIgnupForm({
+class SSIgnupForm extends StatelessWidget {
+  const SSIgnupForm({
     super.key,
-    required this.dark,
   });
 
-  final bool dark;
 
   @override
   Widget build(BuildContext context) {
+    final dark= SHelperFunctions.isDarkMode(context);
     return Form(
       child: Column(
         children: [
@@ -74,28 +75,7 @@ class SIgnupForm extends StatelessWidget {
           ),
           const SizedBox(height: SSizes.spaceBtwSections,),
           ///Cherckbox for terms and condition
-          Row(
-            children: [
-              SizedBox(height:24,width:24,child: Checkbox(value: true, onChanged: (value){})),
-              const SizedBox(width: SSizes.spaceBtwItems,),
-              Text.rich(TextSpan(children: [
-                TextSpan(text: '${STexts.iAgreeTo }  ',style: Theme.of(context).textTheme.bodySmall),
-                TextSpan(text: '${STexts.privacyPolicy }  ',style: Theme.of(context).textTheme.bodyMedium!.apply(
-                  color: dark ? SColors.white : SColors.primary,
-                  decoration: TextDecoration.underline,
-                  decorationColor: dark ? SColors.white : SColors.primary,
-                )),
-                TextSpan(text: '${STexts.and} ',style: Theme.of(context).textTheme.bodySmall),
-                TextSpan(text: STexts.termOfuse,style: Theme.of(context).textTheme.bodyMedium!.apply(
-                  color: dark ? SColors.white : SColors.primary,
-                  decoration: TextDecoration.underline,
-                  decorationColor: dark ? SColors.white : SColors.primary,
-                )),
-
-
-              ]))
-            ],
-          ),
+          STermsndCon(),
           const SizedBox(height: SSizes.spaceBtwSections,),
           ///Sign up Button
           SizedBox(width: double.infinity,
@@ -107,3 +87,4 @@ class SIgnupForm extends StatelessWidget {
     );
   }
 }
+

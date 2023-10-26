@@ -26,8 +26,17 @@ Rx<int> currentPageIndex=0.obs;
     }
  }
   ///update current index & jump to the next Page
- void skipPage(){
-    currentPageIndex.value=2;
-    pageController.jumpToPage(2);
- }
+ // void skipPage(){
+ //    currentPageIndex.value=2;
+ //    pageController.jumpToPage(2);
+ // }
+  void skipPage(){
+    if( currentPageIndex.value==0){
+      Get.offAll(const LoginScreen());
+    }else{
+      // int page =currentPageIndex.value+1;
+      pageController.jumpToPage(2);
+    }
+
+  }
 }
