@@ -56,6 +56,7 @@ class STexts {
   static const String confirmEmailSubtitle="Congratulations! Your Account Awaits : verify Your Email to start Shopping and Experience a World of Unrivaled deals and Personalized offers.";
   static const String emailNotrecieveMessage="Didn't recive emails yet!!! just check your junk/Spam folder or resend it ";
   static const String yourAccountCreatedtitle="Your account successfully created";
+  static const String Scontinue="continue";
   static const String yourAccountCreatedSubtitle="Wellcome to your Unlimited Shopping destination : Start Shopping ";
 
 }
