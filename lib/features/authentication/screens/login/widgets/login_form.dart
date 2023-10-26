@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:s_Store/features/authentication/screens/signup/signup.dart';
-import 'package:s_Store/utils/constant/colors.dart';
 import 'package:s_Store/utils/constant/sizes.dart';
 import 'package:s_Store/utils/constant/text_strings.dart';
 import 'package:s_Store/utils/helpers/helper_function.dart';

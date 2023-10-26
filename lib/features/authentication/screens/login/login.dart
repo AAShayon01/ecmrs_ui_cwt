@@ -6,7 +6,6 @@ import 'package:s_Store/common/styles/widgets.login_signup/social_buttons.dart';
 import 'package:s_Store/features/authentication/screens/login/widgets/login_Header.dart';
 import 'package:s_Store/utils/constant/sizes.dart';
 import 'package:s_Store/utils/constant/text_strings.dart';
-import 'package:s_Store/utils/helpers/helper_function.dart';
 import 'widgets/login_form.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -14,7 +13,6 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = SHelperFunctions.isDarkMode(context);
     return Scaffold(
       body: SingleChildScrollView(
         padding: SSpacingStyle.paddingwithAppBarHeight,
@@ -22,9 +20,9 @@ class LoginScreen extends StatelessWidget {
           children: [
             ///----headings
             ///logo ,Title,Sub title
-            SLoginHeader(),
+          const  SLoginHeader(),
             ///--form
-            SLoginForm(),
+          const  SLoginForm(),
 
             ///ADDing Divider
 
