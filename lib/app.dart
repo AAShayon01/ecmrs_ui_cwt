@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:s_Store/features/authentication/screens/onBoarding/onboarding.dart';
+import 'package:s_Store/main.dart';
 
+import 'features/authentication/screens/login/login.dart';
 import 'utils/theme/theme.dart';
 
 ///--Using This class to Setup Themes ,initial Bindings ,Animation --///
@@ -17,7 +19,7 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: SAppTheme.lighttheme,
       darkTheme: SAppTheme.darkttheme,
-      home: OnBoardingScreen(),
+      home: show?OnBoardingScreen():const LoginScreen(),
     );
   }
 }

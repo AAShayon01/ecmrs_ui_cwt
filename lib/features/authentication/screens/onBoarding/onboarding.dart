@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:s_Store/features/authentication/screens/onBoarding/widgets/onboarding_next_Button.dart';
 import 'package:s_Store/features/authentication/screens/onBoarding/widgets/onboarding_skip.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../../../../utils/constant/image_strings.dart';
 import '../../../../utils/constant/text_strings.dart';
 import '../../controllers.onboarding/onboardig_controller.dart';
+import '../login/login.dart';
 import 'widgets/onboarding_dot_navigation.dart';
 import 'widgets/onboarding_page.dart';
 
@@ -14,6 +16,7 @@ class OnBoardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller=Get.put(OnBoardingController());
+    bool onLastpage = false;
     return Scaffold(
       body: Stack(
         children: [
@@ -49,6 +52,13 @@ class OnBoardingScreen extends StatelessWidget {
     );
   }
 }
+
+ void Done(context) async {
+  final pref=await SharedPreferences.getInstance();
+  await pref.setBool('OnBoardingScreen', false);
+  Navigator.push(context, MaterialPageRoute(builder: (context)=>const LoginScreen()));
+}
+
 
 
 
